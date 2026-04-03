@@ -6,28 +6,31 @@ var titulo =$("h1");
 var subtitulo =$("h2");
 var icones =$(".eita");
 var fundo =$("body");
+var botao_modoescuro =$("#modoescuro")
+
+var modoEscuro = false
 
 //PROCESSAMENTO
 
-titulo.click(()=>{
+botao_modoescuro.click(()=>{
+    if(modoEscuro==false){
     botoes.css("background-color","black");
-    botoes.css("color" , "white");
-});
+    botoes.addClass('.modoescuro');
+    botoes.css('color','white');
+
+    modoEscuro= true;
+
+    }else{
+    botoes.css("background-color","rgb(254, 176, 49)");
+    botoes.css('color','rgb(88, 21, 19)');
+
+    modoEscuro=false;    
+
+    }
 
 
-titulo.dblclick(()=>{
-fundo.html("<h1> Alterado pelo js</h1>");
+}
+
+)
 
 })
-
-subtitulo.click(()=>{
-
-    icones.css("fill","black");
-
-
-})
-
-
-
-})
-

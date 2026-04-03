@@ -98,14 +98,27 @@ h2:hover{
 #icones{
     display:flex;
     margin-top:50px;
+   
 
 }
 .iconicos{
     margin: 20px;
+    fill:beige;
 }
 svg:hover{
     
     fill:brown;
     transform: scale(1);
     cursor:pointer;
+}
+#modoescuro{
+    position: absolute;
+    top: 50%;
+    right:10px;
+}
+
+.modoescuro{
+
+    background-color: black;
+    color:beige;
 }
